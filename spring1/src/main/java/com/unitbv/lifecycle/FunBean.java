@@ -13,4 +13,15 @@ public class FunBean {
     private Logger logger = LoggerFactory.getLogger(FunBean.class);
 
     private DepBean depBean;
+
+    private void init() {
+        System.out.println("init done");
+    }
+
+    public void destroy(){System.out.println("destroy done");}
+
+    //@Override
+    public void afterPropertiesSet() throws Exception {
+
+    }
 }

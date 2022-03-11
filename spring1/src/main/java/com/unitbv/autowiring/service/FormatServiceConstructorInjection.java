@@ -6,6 +6,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class FormatServiceConstructorInjection {
+    public FormatServiceConstructorInjection(FormatUtil formatUtil) {
+        this.formatUtil = formatUtil;
+    }
+
+    @Autowired
     private final FormatUtil formatUtil;
 
     public void checkFormatted() {

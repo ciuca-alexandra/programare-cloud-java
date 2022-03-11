@@ -1,6 +1,6 @@
 package com.unitbv.beansnaming;
 
-
+//@Component("dependantBean")
 public class DependantBeanImpl implements DependantBean {
     private SimpleBean simpleBean;
 
